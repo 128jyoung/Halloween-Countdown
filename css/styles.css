@@ -2,13 +2,19 @@
 {
     margin: 0;
     padding: 0;
-    font-family: 'poppings', sans-serif;
     box-sizing: border-box;
 }
+.henny-penny {
+  font-family: "Henny Penny";
+}
+.rubik-wet-paint {
+  font-family: "Rubik Wet Paint";
+}
+
 .container{
    width: 100vw;
    height: 100vh;
-   background-image: url("../img/background.jpg");
+   background-image: url("../img/background\ 2.png");
    background-position: center;
    background-size: cover;
    padding: 0 8%; 
@@ -20,7 +26,7 @@
     cursor: pointer;
 }
 .content {
-   top: 30%;
+   top: 40%;
    position: absolute;
    transform: translateY(-50%);
    color: #fff; 
@@ -37,7 +43,7 @@
    display: flex; 
 }
 .countdown-time div{
-    flex-basis: 100px;
+    flex-basis: 200px;
 }
 .countdown-time div p{
     font-size: 60px;
@@ -52,11 +58,9 @@
 }
 @keyframes spider {
     0%{
-       bottom: 0;
-       opacity: 0; 
+       transform: translateY(-60px); 
     }
     100%{
-        bottom: 105%;
-        opacity: 1;
+        transform: translateY(40px);
     }
 }
